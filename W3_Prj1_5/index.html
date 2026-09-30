@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Tiffany G. Shen PRJ01 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timezone Map</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-timezone globe-fluent-systems-regular-16.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!-- P5  -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.3.2/lib/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <!-- P5  -->
+
+</head>
+
+<body>
+    <div id="current" class="m">
+        <h2 id="c">CURRENT TIME: <span id="CTtime"></span></h2>
+        <h2 id="t">TIMEZONE: <span id="CTtz"></span></h2>
+    </div>
+
+    <!-- P5 -->
+    <div id="p5box">
+        <main>
+        </main>
+        <script src="sketch.js"></script>
+    </div>
+    <!-- P5 -->
+
+    <div id="otherTimezones" class="m">
+        <!-- <hr> -->
+        <h1>OTHER TIMEZONES</h1>
+
+        <!-- table  -->
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Timezone Name</th>
+                    <th>UTC Offset</th>
+                    <th>DST Offset</th>
+                    <th>Location</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- table end -->
+    </div>
+
+    <div class="sources">
+        <h5>SOURCES</h5>
+        <p><a
+                href="https://upload.wikimedia.org/wikipedia/commons/8/88/World_Time_Zones_Map.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original">World
+                Timezone Map Image</a>, adjusted on Photoshop </p>
+        <p><a href="https://jsonlint.com/datasets/timezones">Timezone JSON Dataset,</a> adjusted manually</p>
+        <a href="https://www.geeksforgeeks.org/javascript/how-to-make-digital-clock-in-p5-js/">p5 Clock Code</a>
+        <p><a href="">Wikipedia Military Timezones,</a> for timezones without a modern name</p>
+        <a href="https://stackoverflow.com/questions/1091372/getting-the-clients-time-zone-and-offset-in-javascript">Getting
+            Native Computer Timezone</a>
+        <p>Various bits of "how to do this" via Mozilla, Stack Overflow, W3 Schools. p5 reference, etc.</p>
+
+        <p>Tiffany G. S.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
